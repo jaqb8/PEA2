@@ -1,21 +1,9 @@
-#include <iostream>
-#include "Graph.h"
-#include "TabuSearch.h"
-#include "SimulatedAnnealing.h"
+#include "UI.h"
 
 int main() {
-    SimulatedAnnealing SA;
-    SA.setSource("br17.txt");
-    SA.solve();
-    cout << SA.getShortestRoute() << endl;
-    cout << SA.getShortestRouteValue();
-
-//    TabuSearch TS;
-//    TS.setSource("br17.txt");
-//    TS.solve();
-//    cout << TS.getShortestRoute() << endl;
-//    cout << TS.getShortestRouteValue();
-
+    UI ui;
+    ui.start();
+    
 
     return 0;
 }
